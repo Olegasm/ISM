@@ -16,22 +16,15 @@ int main(int argc, string argv[])
     {
         case 0:
             candidate_count = 3;
-            node *trav = candidates;
            
-            strcpy(trav->name = "Alice");
+            strcpy(candidates->name = "Alice");
             trav->votes = 0;
             
-            trav = trav->next;
+            strcpy((candidates->next)->name = "Bob");
+            (candidates->next)->votes = 0;
             
-            strcpy(trav->name = "Bob");
-            trav->votes = 0;
-            
-            trav = trav->next;
-            
-            strcpy(trav->name = "Charlie");
-            trav->votes = 0;
-            
-            trav = NULL;
+            strcpy((candidates->next->next)->name = "Charlie");
+            (candidates->next->next)->votes = 0;
             
             break;
     }
