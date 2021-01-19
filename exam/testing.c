@@ -18,7 +18,7 @@ int main(int argc, string argv[])
             candidate_count = 3;
            
             strcpy(candidates->name = "Alice");
-            trav->votes = 0;
+            candidates->votes = 0;
             
             strcpy((candidates->next)->name = "Bob");
             (candidates->next)->votes = 0;
