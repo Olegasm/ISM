@@ -17,21 +17,19 @@ int main(int argc, string argv[])
         case 0:
             candidate_count = 3;
             
-            node *cand1 = malloc(sizeof(node));
-            node *cand2 = malloc(sizeof(node));
-            
-            cand1->next = candidates;
-            candidates = cand1;
-            
-            cand2->next = candidates;
-            candidates = cand2;  
-            
+            candidates = malloc(sizeof(node));
+            node *second = malloc(sizeof(node));
+            node *third = malloc(sizeof(node));
+
+            candidates->next = second;
+            second->next = third;
+
             strcpy(candidates->name, "Alice");
             candidates->votes = 0;
-            
+
             strcpy((candidates->next)->name, "Bob");
             candidates->next->votes = 0;
-            
+
             strcpy((candidates->next->next)->name, "Charlie");
             candidates->next->next->votes = 0;
             
