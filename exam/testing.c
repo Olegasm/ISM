@@ -16,12 +16,23 @@ int main(int argc, string argv[])
     {
         case 0:
             candidate_count = 3;
-            candidates[0].name = "Alice";
-            candidates[0].votes = 0;
-            candidates[1].name = "Bob";
-            candidates[1].votes = 0;
-            candidates[2].name = "Charlie";
-            candidates[2].votes = 0;
+            node *trav = candidates;
+           
+            trav->name = "Alice";
+            trav->votes = 0;
+            
+            trav = trav->next;
+            
+            trav->name = "Bob";
+            trav->votes = 0;
+            
+            trav = trav->next;
+            
+            trav->name = "Charlie";
+            trav->votes = 0;
+            
+            trav = NULL;
+            
             break;
     }
 
@@ -46,57 +57,58 @@ int main(int argc, string argv[])
 
         case 4:
             vote("Alice");
-            printf("%i %i %i", candidates[0].votes, candidates[1].votes, candidates[2].votes);
+            printf("%i %i %i", candidates->votes, (candidates->next)->votes, (candidates->next->next)->votes);
             break;
 
         case 5:
-            candidates[0].votes = 2;
-            candidates[1].votes = 7;
-            candidates[2].votes = 0;
+            candidate->votes= 2
+            (candidates->next)->votes = 7;    
+            (candidates->next->next)->votes) = 0    
+                
             vote("Bob");
-            printf("%i %i %i", candidates[0].votes, candidates[1].votes, candidates[2].votes);
+            printf("%i %i %i", candidates->votes, (candidates->next)->votes, (candidates->next->next)->votes);
             break;
 
         case 6:
-            candidates[0].votes = 2;
-            candidates[1].votes = 8;
-            candidates[2].votes = 0;
+            candidate->votes= 2
+            (candidates->next)->votes = 8;    
+            (candidates->next->next)->votes) = 0
             vote("David");
-            printf("%i %i %i", candidates[0].votes, candidates[1].votes, candidates[2].votes);
+            printf("%i %i %i", candidates->votes, (candidates->next)->votes, (candidates->next->next)->votes);
             break;
 
         case 7:
-            candidates[0].votes = 8;
-            candidates[1].votes = 2;
-            candidates[2].votes = 0;
+            candidate->votes= 8
+            (candidates->next)->votes = 2;    
+            (candidates->next->next)->votes) = 0   
             print_winner();
             break;
 
         case 8:
-            candidates[0].votes = 1;
-            candidates[1].votes = 8;
-            candidates[2].votes = 2;
+            candidate->votes= 1
+            (candidates->next)->votes = 8;    
+            (candidates->next->next)->votes) = 2   
             print_winner();
             break;
 
         case 9:
-            candidates[0].votes = 1;
-            candidates[1].votes = 8;
-            candidates[2].votes = 9;
+            candidate->votes= 1
+            (candidates->next)->votes = 8;    
+            (candidates->next->next)->votes) = 9
             print_winner();
             break;
 
         case 10:
-            candidates[0].votes = 8;
-            candidates[1].votes = 8;
-            candidates[2].votes = 5;
+            candidate->votes= 8
+            (candidates->next)->votes = 8;    
+            (candidates->next->next)->votes) = 5   
             print_winner();
             break;
 
         case 11:
-            candidates[0].votes = 8;
-            candidates[1].votes = 8;
-            candidates[2].votes = 8;
+            candidate->votes= 8
+            (candidates->next)->votes = 8;    
+            (candidates->next->next)->votes) = 8   
             print_winner();
             break;
     }
