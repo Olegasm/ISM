@@ -17,13 +17,13 @@ int main(int argc, string argv[])
         case 0:
             candidate_count = 3;
             
-            strcpy(candidates->name = "Alice");
+            strcpy(candidates->name, "Alice");
             candidates->votes = 0;
             
-            strcpy((candidates->next)->name = "Bob");
+            strcpy((candidates->next)->name, "Bob");
             candidates->next->votes = 0;
             
-            strcpy((candidates->next->next)->name = "Charlie");
+            strcpy((candidates->next->next)->name, "Charlie");
             candidates->next->next->votes = 0;
             
             break;
