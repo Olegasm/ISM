@@ -17,6 +17,15 @@ int main(int argc, string argv[])
         case 0:
             candidate_count = 3;
             
+            node *cand1 = malloc(sizeof(node));
+            node *cand2 = malloc(sizeof(node));
+            
+            cand1->next = candidates;
+            candidates = cand1;
+            
+            cand2->next = candidates;
+            candidates = cand2;  
+            
             strcpy(candidates->name, "Alice");
             candidates->votes = 0;
             
