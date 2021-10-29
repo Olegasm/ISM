@@ -1,0 +1,9 @@
+check50:
+  files:
+    - !exclude "*"
+    - !require "average.c"
+
+submit50:
+  files:
+    - !exclude "*"
+    - !require "average.c"
