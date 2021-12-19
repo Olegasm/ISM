@@ -9,6 +9,7 @@ check50:
     - !require "drop.py"
     - !require "pitch.txt"
     - !require "all_students.db"
+    - !require "points.csv"
 
 submit50:
   files:
@@ -21,3 +22,4 @@ submit50:
     - !require "drop.py"
     - !require "pitch.txt"
     - !require "all_students.db"
+    - !require "points.csv"
