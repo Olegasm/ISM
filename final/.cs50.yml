@@ -7,6 +7,7 @@ check50:
     - !require "delete.py"
     - !require "insert.py"
     - !require "drop.py"
+    - !require "pitch.txt"
 
 submit50:
   files:
@@ -17,3 +18,4 @@ submit50:
     - !require "delete.py"
     - !require "insert.py"
     - !require "drop.py"
+    - !require "pitch.txt"
