@@ -8,6 +8,7 @@ check50:
     - !require "insert.py"
     - !require "drop.py"
     - !require "pitch.txt"
+    - !require "all_students.db"
 
 submit50:
   files:
@@ -19,3 +20,4 @@ submit50:
     - !require "insert.py"
     - !require "drop.py"
     - !require "pitch.txt"
+    - !require "all_students.db"
