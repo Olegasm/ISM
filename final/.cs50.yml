@@ -1,0 +1,19 @@
+check50:
+  files:
+    - !exclude "*"
+    - !require "create.py"
+    - !require "read.py"
+    - !require "update.py"
+    - !require "delete.py"
+    - !require "insert.py"
+    - !require "drop.py"
+
+submit50:
+  files:
+    - !exclude "*"
+    - !require "create.py"
+    - !require "read.py"
+    - !require "update.py"
+    - !require "delete.py"
+    - !require "insert.py"
+    - !require "drop.py"
