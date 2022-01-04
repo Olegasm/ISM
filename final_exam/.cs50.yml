@@ -1,0 +1,13 @@
+check50:
+  files:
+    - !exclude "*"
+    - !require "oil.db"
+    - !require "oil.csv"
+    - !require "oil_insert.py"
+
+submit50:
+  files:
+    - !exclude "*"
+    - !require "oil.db"
+    - !require "oil.csv"
+    - !require "oil_insert.py"
