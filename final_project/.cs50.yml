@@ -1,0 +1,9 @@
+check50:
+  files:
+    - !exclude "*"
+    - !require "final.py"
+
+submit50:
+  files:
+    - !exclude "*"
+    - !require "final.py"
